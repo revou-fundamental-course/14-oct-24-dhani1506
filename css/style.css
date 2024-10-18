@@ -1,0 +1,16 @@
+header {
+display: inline;
+}
+
+.logo-icon {
+    background-image: url(assets/LogoDHN.png);
+}
+
+nav>a {
+    border: 1px solid black;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    float: inline-end;
+}
+

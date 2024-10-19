@@ -1,16 +1,62 @@
-header {
-display: inline;
+header{
+    border-bottom: 1px solid black;
+    height: 60px;
+    width: 100%;
 }
 
 .logo-icon {
-    background-image: url(assets/LogoDHN.png);
+    float:left ;
+    height: 50px;
+    padding: 8px 0px 0px 10px;
+
+}
+
+.logo-icon img {
+    border: 1px solid black;
+    border-radius: 50px;
+    
 }
 
 nav>a {
+    float:right ;
     border: 1px solid black;
-    padding: 8px;
     text-decoration: none;
     color: black;
-    float: inline-end;
+    padding: 10px;
+    margin : 8px 0px 0px 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Microclear Float */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

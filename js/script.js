@@ -1,3 +1,3 @@
-// Ganti Nama User
-    let user = prompt("siapakah nama anda")
-    document.getElementById('user').innerHTML = user
+
+    // let user = prompt("Ketik Nama Anda")
+    //document.getElementById('user').innerHTML = user

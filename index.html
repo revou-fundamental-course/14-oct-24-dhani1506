@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     <style>
+        /* banner profile */
         .banner{
             width: 100%px;
             height: 250px;
@@ -69,8 +70,47 @@
         </section>
 
         <!-- Section Message Us -->
-        <section id="section-massage">
+        <section id="section-message" cf>
             <h1>Message Us</h1>
+            
+            <!-- Form Message -->
+            <form name="message-form" onsubmit="return validateForm ()">
+                <!-- Nama -->
+               Nama :  <input type="text" placeholder="Nama Panjang" name="nama-panjang">
+               <br>
+                
+                <!-- Tanggal Lahir -->
+                 Tanggal Lahir :
+                 <input type="date" name="tanggal=lahir">
+                 <br>
+
+                <!-- Jenis Kelamin -->
+               Jenis Kelamin : 
+               <input type="radio" name="gender" id="male" value="male">
+               <label for="male">Laki-Laki</label>
+               <input type="radio" name="gender" id="female" value="female">
+               <label for="female">Perempuan</label>
+               <br>
+
+               <!-- Pesan -->
+                Pesan :
+                <textarea name="pesan" placeholder="Pesan"></textarea>
+                <br>
+
+                <!-- Submit -->
+                 <input type="submit" value="kirim">
+            </form>
+
+            <!-- Hasil Form -->
+             <div>
+                <p>Current Time :</p>
+                <br>
+                <p>Nama: <span id="hasil-nama-panjang"></span></p>
+                <p>Tanggal Lahir: <span id="hasil-tanggal-lahir"></span></p>
+                <p>Jenis Kelamin: <span id="hasil-gender"></span></p>
+                <p>Pesan: <span id="hasil-pesan"></span></p>
+             </div>
+
         </section>
 
       </main>

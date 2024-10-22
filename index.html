@@ -76,29 +76,29 @@
             <!-- Form Message -->
             <form name="message-form" onsubmit="return validateForm ()">
                 <!-- Nama -->
-               Nama :  <input type="text" placeholder="Nama Panjang" name="nama-panjang">
+               Nama :  <input type="text" placeholder="Nama Panjang" name="nama-panjang" id="nama-panjang">
                <br>
                 
                 <!-- Tanggal Lahir -->
                  Tanggal Lahir :
-                 <input type="date" name="tanggal=lahir">
+                 <input type="date" name="tanggal=lahir" id="tanggal-lahir">
                  <br>
 
                 <!-- Jenis Kelamin -->
                Jenis Kelamin : 
-               <input type="radio" name="gender" id="male" value="male">
+               <input type="radio" name="gender" id="male" value="Laki-Laki" class="gender">
                <label for="male">Laki-Laki</label>
-               <input type="radio" name="gender" id="female" value="female">
+               <input type="radio" name="gender" id="female" value="Perempuan" class="gender">
                <label for="female">Perempuan</label>
                <br>
 
                <!-- Pesan -->
-                Pesan :
+                <p id="pesan">Pesan :</p>
                 <textarea name="pesan" placeholder="Pesan"></textarea>
                 <br>
 
                 <!-- Submit -->
-                 <input type="submit" value="kirim">
+                 <input type="submit" value="SUBMIT" id="submit">
             </form>
 
             <!-- Hasil Form -->

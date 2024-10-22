@@ -27,6 +27,7 @@ nav>a {
 }
 
 #section-message {
+    font-family: arial, sans-serif;
     display: inline-block;
     border: 1px solid black;
     height: 350px;
@@ -34,23 +35,63 @@ nav>a {
     padding: 20px;
 }
 
-#section-message input {
-    margin: 0px 0px 0px 0px;
+#section-message #nama-panjang {
+    margin: 0px 0px 15px 60px;
+    width: 250px;
+    border-radius: 5px;
+    
+}
+
+#section-message #tanggal-lahir {
+    margin: 0px 0px 15px 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#section-message .gender {
+    margin: 0px 0px 0px 10px;
+
+}
+
+#section-message textarea {
+    margin: 0px 0px 15px 120px;
+    width: 240px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#section-message #pesan {
+    position: relative;
+    top: 15px;
+    margin: 15px 0px 0px 0px;
+}
+
+#section-message #submit {
+    width: 370px;
 }
 
 #section-message form {
     float: left;
-   
-    
+    position: absolute; 
+    left: 200px;
 }
 
 #section-message div {
     float: right;
     border: 1px solid black;
-    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 380px;
     position: absolute;
-    left: 1000px;
+    left: 900px;
     margin: 0px 0px 0px 0px;
+}
+
+#section-message h1 {
+    margin-left:170px ;
+    font-family: arial, sans-serif;
+    position: relative;
+    bottom: 15px;
 }
 
 

@@ -1,8 +1,8 @@
+    // Validasi Nama/user
+     let user = prompt("Ketik Nama Anda")
+     document.getElementById('user').innerHTML = user
 
-    // let user = prompt("Ketik Nama Anda")
-    // document.getElementById('user').innerHTML = user
-
-    // Message
+    // Validasi Message
     function validateForm () {
         const name = document.forms ["message-form"]["nama-panjang"].value;
         const date = document.forms ["message-form"]["tanggal-lahir"].value;

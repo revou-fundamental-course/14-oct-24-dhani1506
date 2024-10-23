@@ -2,6 +2,8 @@
 body {
     background-color: #EEEEEE;
 }
+
+
 /* Navigasi */
 .header{
     border-bottom: 1px solid black;
@@ -14,22 +16,7 @@ body {
 #section-home h1 {
     font-family: 'Times New Roman', Times, serif,;
     font-size: 18px;
-}
-
-#section-profile {
-    height: 500px;
-}
-
-#section-profile .main {
-    float: left;
-    width: 600px;
-    margin: 20px 0px 0px 100px ;
-}
-
-#section-profile .sidebar {
-    float: right;
-    width: 300px;
-    margin:20px 100px 0px 0px;
+    padding: 20px;
 }
 
 .logo-icon {
@@ -58,19 +45,42 @@ nav>a:hover {
     border-radius: 5px;
 }
 
+
+/* Banner */
+.banner {
+    border: 1px solid black;
+}
+
+
 /* Profile */
 #section-profile {
-    margin-bottom: 50px;
+    background-color:#C4FB6D ;
+    color: #393E46;
+    border: 1px solid black;
+    height: 500px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
-#section-profile p {
-    font-family: 'Times New Roman', Times, serif,;
-    font-size: 20px;
-
+#section-profile .main {;
+    float: left;
+    width: 600px;
+    margin: 20px 0px 0px 100px ;
 }
+
+#section-profile .sidebar {
+    float: right;
+    width: 300px;
+    margin:20px 100px 0px 0px;
+}
+
+
 
 /* Message Us */
 #section-message {
+    background-color:#C4FB6D ;
+    padding: 20px;
     border: 1px solid ;
     font-family: 'Times New Roman', Times, serif,;
     height: 550px;
@@ -79,7 +89,8 @@ nav>a:hover {
 }
 
 #section-message form {
-   background-color: ; 
+   background-color:#393E46; 
+   color: white;
    padding: 20px;
    border: 1px solid black;
    border-radius: 5px;
@@ -89,7 +100,8 @@ nav>a:hover {
 }
 
 #section-message div {
-    background-color: ;
+    background-color:#393E46; 
+    color: white;
     padding: 5px;
     border: 1px solid black;
     border-radius: 5px;
@@ -130,14 +142,19 @@ nav>a:hover {
 
 #section-message #submit {
     background-color: ;
-    color: white;
+    color: ;
     border-radius: 7px;
     width: 150px;
     margin: 0px 0px 0px 100px ;
 }
 
 /* FOOTER */
-
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
 
 

@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASSIGNMENT</title>
+    <title>Website Saya</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    <style>
-        /* banner profile */
-        .banner{
-            width: 100%px;
-            height: 250px;
-            background-image: url(assets/kota.jpg);
-            background-size: cover;
-            background-position: 10px;
-        }
-    </style>
-
-
 
 </head>
 
@@ -34,9 +22,8 @@
         <!-- Navigasi -->
          <nav>
              <a href="#section-message">Message Us</a>
-             <a href="#section-portofolio">Portofolio</a>
              <a href="#section-profile">Our Profile</a>
-             <a href="#section-home">Home</a>
+             <a href="#">Home</a>
          </nav>
 
      </header>
@@ -51,51 +38,60 @@
             </header>
 
             <article>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam libero</p>
                 <!-- banner -->
-                 <div class="banner"></div>
+                 <div class="banner"><img src="assets/banner(1).png" alt="" width="100%" height="500px"></div>
+                 <div class="banner"><img src="assets/banner(2).png" alt="" width="100%" height="500px"></div>   
             </article>
         </section>
 
         <!-- Section Profile -->
         <section id="section-profile">
-            <header>
-                <h1>Profile</h1>
-            </header>
-        </section>
+            <div class="main"><p><b><i>DHNtech</i></b> Berdiri sejak 15 Juni 2009, <b><i>DHNtech</i></b> adalah perusahaan teknologi yang berfokus pada pengembangan inovasi digital dan solusi IT terdepan. Kami percaya bahwa teknologi adalah kunci untuk masa depan yang lebih baik, dan kami berdedikasi untuk menciptakan produk serta layanan yang mendukung efisiensi, transformasi digital, dan pertumbuhan bisnis klien kami. DHNtech memiliki tim profesional dengan keahlian di bidang software engineering, cloud computing, serta pengembangan aplikasi berbasis web dan mobile. Dengan lebih dari satu dekade pengalaman, kami terus berevolusi dan mengikuti perkembangan teknologi terbaru untuk memberikan solusi yang paling relevan dan efektif kepada pelanggan kami.
+            Misi kami adalah untuk menyediakan solusi teknologi yang inovatif dan terpercaya, mendukung perusahaan dalam mempercepat digitalisasi mereka, serta membantu mereka menghadapi tantangan masa depan.Visi kami adalah menjadi pemimpin global dalam inovasi teknologi, dengan menciptakan ekosistem digital yang mendukung perkembangan berkelanjutan di berbagai sektor industri. Profil ini bisa disesuaikan lebih lanjut sesuai dengan misi dan tujuan spesifik dari DHNtech.</p></div>
 
-         <!-- Section Portofolio -->
-        <section id="section-portofolio">
-            <h1>Portofolio</h1>
+            <div class="sidebar">
+                <h1>Prestasi Perusahaan</h1>
+                <ol type="1">
+                    <li>
+                        <b>Peluncuran Produk Inovativ</b>Semenjak Berdiri Pada 15 Juni 2009 <i>DHNtech</i> berhasil Meluncurkan Berbagai Produk Teknologi Yang Inovatif. Produk Kami Telah Digunakan oleh ribuan Perusahaan
+                    </li>
+                    <li>
+                        <b>Kemitraan Strategis dengan Perusahaan Global</b><iDHNtech></i> telah menjalin kemitraan strategis dengan beberapa perusahaan teknologi global. Kolaborasi ini memungkinkan kami untuk menyediakan solusi teknologi canggih yang disesuaikan dengan kebutuhan klien di seluruh dunia.
+                    </li>
+                    <li>
+                        <b>Ekspansi Pasar Internasional</b>Dalam kurun waktu lebih dari satu dekade, <i>DHNtech</i> berhasil melakukan ekspansi ke pasar internasional. Kami kini melayani klien di lebih dari 10 negara dengan portofolio produk dan layanan yang semakin berkembang.
+                    </li>
+                </ol>
+            </div>
         </section>
 
         <!-- Section Message Us -->
         <section id="section-message" cf>
-            <h1>Message Us</h1>
+            <h1>Kirim Kami pesan</h1>
             
             <!-- Form Message -->
             <form name="message-form" onsubmit="return validateForm ()">
                 <!-- Nama -->
-               Nama :  <input type="text" placeholder="Nama Panjang" name="nama-panjang" id="nama-panjang">
-               <br>
+                <hr><p>Nama :</p><input type="text" placeholder="Ketik Nama Anda..." name="nama-panjang" id="nama-panjang">
+               
                 
                 <!-- Tanggal Lahir -->
-                 Tanggal Lahir :
+                 <hr><p>Tanggal Lahir :</p>
                  <input type="date" name="tanggal=lahir" id="tanggal-lahir">
-                 <br>
+                 
 
                 <!-- Jenis Kelamin -->
-               Jenis Kelamin : 
+                <hr><p>Jenis Kelamin </p>
                <input type="radio" name="gender" id="male" value="Laki-Laki" class="gender">
                <label for="male">Laki-Laki</label>
                <input type="radio" name="gender" id="female" value="Perempuan" class="gender">
                <label for="female">Perempuan</label>
-               <br>
+               
 
                <!-- Pesan -->
-                <p id="pesan">Pesan :</p>
-                <textarea name="pesan" placeholder="Pesan"></textarea>
-                <br>
+                <hr><p>Pesan :</p>
+                <textarea name="pesan" placeholder="Pesan"></textarea re>
+                <hr>
 
                 <!-- Submit -->
                  <input type="submit" value="SUBMIT" id="submit">
@@ -103,8 +99,6 @@
 
             <!-- Hasil Form -->
              <div>
-                <p>Current Time :</p>
-                <br>
                 <p>Nama: <span id="hasil-nama-panjang"></span></p>
                 <p>Tanggal Lahir: <span id="hasil-tanggal-lahir"></span></p>
                 <p>Jenis Kelamin: <span id="hasil-gender"></span></p>

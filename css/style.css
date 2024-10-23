@@ -1,15 +1,41 @@
+
+body {
+    background-color: #EEEEEE;
+}
+/* Navigasi */
 .header{
     border-bottom: 1px solid black;
     height: 60px;
     width: 100%;
-    
+    background-color: #C4FB6D;
+    color: white;
+}
+
+#section-home h1 {
+    font-family: 'Times New Roman', Times, serif,;
+    font-size: 18px;
+}
+
+#section-profile {
+    height: 500px;
+}
+
+#section-profile .main {
+    float: left;
+    width: 600px;
+    margin: 20px 0px 0px 100px ;
+}
+
+#section-profile .sidebar {
+    float: right;
+    width: 300px;
+    margin:20px 100px 0px 0px;
 }
 
 .logo-icon {
-    float:left ;
+    float: left;
     height: 50px;
     padding: 8px 0px 0px 10px;
-
 }
 
 .logo-icon img {
@@ -18,81 +44,99 @@
 }
 
 nav>a {
-    float:right ;
-    border: 1px solid black;
+    float:right;
     text-decoration: none;
     color: black;
     padding: 10px;
-    margin : 8px 0px 0px 0px;
+    margin : 8px 0px 0px 10px;
 }
 
+nav>a:hover {
+    background-color: #393E46;
+    color: #F7FF56;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+/* Profile */
+#section-profile {
+    margin-bottom: 50px;
+}
+
+#section-profile p {
+    font-family: 'Times New Roman', Times, serif,;
+    font-size: 20px;
+
+}
+
+/* Message Us */
 #section-message {
-    font-family: arial, sans-serif;
-    display: inline-block;
+    border: 1px solid ;
+    font-family: 'Times New Roman', Times, serif,;
+    height: 550px;
+    border-radius: 5px;
+    width: 85%;
+}
+
+#section-message form {
+   background-color: ; 
+   padding: 20px;
+   border: 1px solid black;
+   border-radius: 5px;
+   display: inline-block;
+   margin: 0px 0px 0px 20px;
+   float: left;
+}
+
+#section-message div {
+    background-color: ;
+    padding: 5px;
     border: 1px solid black;
-    height: 350px;
-    width: 97%;
+    border-radius: 5px;
+    width: 500px;
+    float: right;
+    margin : 50px 100px 0px 0px;
+}
+
+#section-message h1 {
     padding: 20px;
 }
 
 #section-message #nama-panjang {
-    margin: 0px 0px 15px 60px;
-    width: 250px;
-    border-radius: 5px;
-    
+    background-color: ;
+    margin: 0px 0px 0px 0px;    
 }
 
 #section-message #tanggal-lahir {
-    margin: 0px 0px 15px 10px;
-    border-radius: 5px;
-    width: 250px;
+    background-color: ;
+    border-radius: 7px;
 }
 
 #section-message .gender {
-    margin: 0px 0px 0px 10px;
-
+    background-color: ;
+    border-radius: 7px;
 }
 
 #section-message textarea {
-    margin: 0px 0px 15px 120px;
-    width: 240px;
-    height: 50px;
-    border-radius: 5px;
+    background-color: ;
+    border-radius: 7px;
 }
 
 #section-message #pesan {
-    position: relative;
-    top: 15px;
-    margin: 15px 0px 0px 0px;
+    width: 150px;
+    background-color: ;
+    border-radius: 7px;
 }
 
 #section-message #submit {
-    width: 370px;
+    background-color: ;
+    color: white;
+    border-radius: 7px;
+    width: 150px;
+    margin: 0px 0px 0px 100px ;
 }
 
-#section-message form {
-    float: left;
-    position: absolute; 
-    left: 200px;
-}
-
-#section-message div {
-    float: right;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    width: 380px;
-    position: absolute;
-    left: 900px;
-    margin: 0px 0px 0px 0px;
-}
-
-#section-message h1 {
-    margin-left:170px ;
-    font-family: arial, sans-serif;
-    position: relative;
-    bottom: 15px;
-}
+/* FOOTER */
 
 
 
@@ -120,10 +164,3 @@ nav>a {
     clear: both;
 }
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
